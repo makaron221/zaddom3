@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{%block title%}<title>login</title>{%endblock%}
+{%block content%}
+    <form method="post" novalidate>
+        {{ form.hidden_tag() }}
+
+        {{form.login.label}}
+        {{form.login}}
+
+        {{form.password.label}}
+        {{form.password}}
+
+
+        {{form.submit}}
+    </form>
+{%endblock%}
